@@ -1,5 +1,7 @@
 # GNOME Extensions Maintainer Hub
 
+Created by [Otávio Belchior](https://github.com/OtavioAVBelchior)
+
 The GNOME Extensions Maintainer Hub is a comprehensive dashboard built with Laravel and Filament, designed specifically for GNOME Shell Extension developers. It centralizes your workflow by automatically syncing and tracking open issues and merge/pull requests across GitHub and GitLab for all your extensions.
 
 ## Features
