@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="public/images/app_logo_transparent.png" width="150">
+  <img src="public/logo.svg" width="150">
 </p>
 
 # GNOME Extensions Maintainer Hub
