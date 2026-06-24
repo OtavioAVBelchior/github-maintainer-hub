@@ -9,19 +9,28 @@
         <script src="https://cdn.tailwindcss.com"></script>
         <style>
             body { font-family: 'Inter', sans-serif; }
-            @keyframes slowPulse {
-                0%, 100% { opacity: 0.5; transform: scale(1); }
-                50% { opacity: 0.8; transform: scale(1.05); }
+            @keyframes blob {
+                0% { transform: translate(0px, 0px) scale(1); opacity: 0.5; }
+                33% { transform: translate(30px, -50px) scale(1.1); opacity: 0.7; }
+                66% { transform: translate(-20px, 20px) scale(0.9); opacity: 0.6; }
+                100% { transform: translate(0px, 0px) scale(1); opacity: 0.5; }
             }
-            .animate-slow-pulse {
-                animation: slowPulse 6s ease-in-out infinite;
+            .animate-blob {
+                animation: blob 10s infinite alternate;
+            }
+            .animation-delay-2000 {
+                animation-delay: 2s;
+            }
+            .animation-delay-4000 {
+                animation-delay: 4s;
             }
         </style>
     </head>
     <body class="bg-slate-900 text-white min-h-screen flex flex-col items-center justify-center relative overflow-hidden">
         <!-- Background decorative elements -->
-        <div class="absolute top-[-10%] left-[-10%] w-96 h-96 bg-blue-500/20 rounded-full blur-3xl animate-slow-pulse"></div>
-        <div class="absolute bottom-[-10%] right-[-10%] w-96 h-96 bg-purple-500/20 rounded-full blur-3xl animate-slow-pulse" style="animation-delay: 3s;"></div>
+        <div class="absolute top-[-10%] left-[-10%] w-96 h-96 bg-blue-500/30 rounded-full mix-blend-screen blur-3xl animate-blob"></div>
+        <div class="absolute top-[20%] right-[-10%] w-96 h-96 bg-purple-500/30 rounded-full mix-blend-screen blur-3xl animate-blob animation-delay-2000"></div>
+        <div class="absolute bottom-[-20%] left-[20%] w-96 h-96 bg-pink-500/30 rounded-full mix-blend-screen blur-3xl animate-blob animation-delay-4000"></div>
 
         <div class="z-10 text-center max-w-2xl px-6">
             <div class="mb-8 flex justify-center">
